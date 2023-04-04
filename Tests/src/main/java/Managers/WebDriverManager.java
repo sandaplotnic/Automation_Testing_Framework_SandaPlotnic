@@ -24,11 +24,6 @@ public class WebDriverManager {
                 driver = new ChromeDriver(options);
                 break;
 
-            case "FIREFOX":
-                System.setProperty("webdriver.gecko.driver", "src/main/resources/drivers/geckodriver.exe");
-                driver = new FirefoxDriver();
-                break;
-
             default:
                 System.out.println("Invalid input");
         }

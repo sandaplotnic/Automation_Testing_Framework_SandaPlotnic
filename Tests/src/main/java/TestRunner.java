@@ -13,7 +13,7 @@ public class TestRunner {
         homePage.navigateToRegisterPage();
         RegisterPage registerPage = new RegisterPage(webDriverManager.getDriver());
         registerPage.fillInTheRegisterForm("Sanda", "Plotnic", "sanda.plotnic@yahoo.com","1245");
-        Thread.sleep(3000);
+        Thread.sleep(10000);
 
         webDriverManager.getDriver().close();
     }
